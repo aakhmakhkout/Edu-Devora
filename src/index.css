@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+.hero {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.navlinks > ul > li, .loginbtn{
+    padding: 5px 10px;
+    transition: all ease 0.4s;
+}
+.navlinks > ul > li:hover, .loginbtn:hover{
+    background-color: #6464dc;
+    padding: 5px 10px;
+    color: #eaf4fe;
+    border-radius: 10px;
+    /* border: 1px solid #000000; */
+    transition: all ease 0.3s;
+}
+
+.heroImgDiv >img {
+    transition: all ease-in-out 0.3s;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.heroImgDiv > img:hover {
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.1);
+}
+
+.herobtns > .btn1 {
+     box-shadow: rgba(57, 72, 131, 0.35) 0px 5px 15px;
+     transition: all ease 0.3s;
+}
+
+.herobtns > .btn1:hover {
+    transition: all ease 0.3s;
+    background-color: #6464dc;
+    color: white;
+}
+
+.herobtns > .btn2 {
+    border: 1px solid #f69d11;
+    color:white;
+    transition: all ease 0.3s;
+}
+
+.herobtns > .btn2:hover {
+    transition: all ease 0.3s;
+    background-color: #f69d11;
+    color: #0e162a;
+}
+
+.cards {
+    transition: all ease 0.3s;
+ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    
+    .cards:hover {
+  transform: translateY(-8px) scale(1.1);
+  transition: all ease 0.3s;
+}
+        
+

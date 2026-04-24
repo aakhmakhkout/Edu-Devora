@@ -31,9 +31,9 @@ const Facilities = () => {
   ]
   return (
     <div className="flex flex-col justify-center items-center relative -top-25 z-1000">
-        <div className="absolute -top-25 bg-[#2e3771] px-20 py-3 text-4xl font-extrabold text-[#fffeff]  shadow-md">
+        {/* <div className="absolute -top-25 bg-[#2e3771] px-20 py-3 text-4xl font-extrabold text-[#fffeff]  shadow-md">
             <h1>Facilities</h1>
-        </div>
+        </div> */}
 
 
         

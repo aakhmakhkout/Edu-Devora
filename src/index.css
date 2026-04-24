@@ -19,6 +19,8 @@ html {
     transition: all ease 0.3s;
 }
 
+
+
 .heroImgDiv >img {
     transition: all ease-in-out 0.3s;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -61,5 +63,20 @@ html {
   transform: translateY(-8px) scale(1.1);
   transition: all ease 0.3s;
 }
-        
 
+.hrLine {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+
+
+.aboutImgs > div > img {
+    transition: all ease 0.3s;
+}
+
+.aboutImgs > div > img:hover {
+    transition: all ease 0.3;
+    transform: scale(1.1);
+}

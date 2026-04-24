@@ -8,7 +8,7 @@ const heroBtns = () => {
 
             <button className='bg-[#f69d11] px-3 py-2 rounded-xl text-[#0e162a] font-bold btn1 active:scale-95'>Apply Now</button>
 
-            <button className='btn2 active:scale-95 font-bold rounded-xl px-3 py-2'>Read More</button>
+            <button className='btn2 active:scale-95 font-bold rounded-xl px-3 py-2'><a href="#About">Read More</a></button>
         </div>
     </div>
   )

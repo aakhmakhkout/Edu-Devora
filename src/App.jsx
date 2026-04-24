@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from "./pages/home.jsx"
 import ClassesAndCourses from './components/ClassesAndCourses.jsx'
-import AboutUs from './components/AboutUs.jsx'
+import AboutUs from './components/about/AboutandTech.jsx'
 import ContactUs from './components/ContactUs.jsx'
 import Login from './pages/login.jsx'
 import {Routes, Route} from "react-router-dom"

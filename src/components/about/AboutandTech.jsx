@@ -4,7 +4,7 @@ import TechandFeatures from './TechandFeatures'
 
 const AboutandTech = () => {
   return (
-    <div className='h-400 w-full bg-[#0e162a] text-white flex flex-col justify-evenly'>
+    <div className='h-350 w-full bg-[#0e162a] text-white flex flex-col justify-evenly'>
         <AboutUs />
         <TechandFeatures />
     </div>

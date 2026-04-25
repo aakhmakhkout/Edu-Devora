@@ -1,5 +1,6 @@
 import React from 'react'
 import img from "../../assets/logo2.jpg"
+import Gototop from './gototop'
 import { Link } from 'react-router-dom'
 
 const navbar = () => {
@@ -23,6 +24,9 @@ const navbar = () => {
           <Link to="login" className='loginbtn'>Login/SignUp</Link>
           
          </ul>
+        </div>
+        <div className='fixed top-30 right-5'>
+          <Gototop />
         </div>
     </div>
   )

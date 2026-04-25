@@ -42,12 +42,12 @@ const AboutUs = () => {
       <div className='flex justify-evenly h-120 w-full gap-10 '>
           <div className='flex relative w-[50%] h-full  aboutImgs'>
 
-            <div className='absolute left-40 top-5'>
-            <img src={AboutImg1} alt="img" className='w-80'/>
+            <div className='absolute left-30 top-5'>
+            <img src={AboutImg1} alt="img" className='w-90'/>
             </div>
 
             <div className='absolute bottom-5 right-40'>
-            <img src={AboutImg2} alt="img" className='w-80'/>
+            <img src={AboutImg2} alt="img" className='w-90'/>
             </div>
 
 

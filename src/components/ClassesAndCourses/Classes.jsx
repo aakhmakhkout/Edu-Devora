@@ -5,13 +5,13 @@ import {Link} from "react-router-dom";
 const Classes = () => {
    
   return (
-<div className=' flex flex-col justify-center items-center h-screen bg-[#050915]'>
-    <div className='flex justify-center mt-30'>
-    <h1 className='flex justify-center bg-[#f69d11] w-80 rounded-t-4xl py-5 text-5xl font-bold text-[#0e162a]'>Classes</h1>
+<div className=' flex flex-col justify-center items-center h-screen bg-[#050915]' id="Classes">
+    <div className='flex justify-center '>
+    <h1 className='flex justify-center bg-[#f69d11] w-80 rounded-t-4xl py-5 text-5xl font-extrabold text-[#0e162a]'>Classes</h1>
     </div>
 
 
-    <div className='bg-[#0f172b] h-170 w-[80%] text-white classesDiv backdrop-blur-md shadow-md flex justify-evenly items-center rounded-md borders'>
+    <div className='bg-[#0f172b] h-170 w-[80%] text-white classesDiv backdrop-blur-md flex justify-evenly items-center rounded-md borders'>
 
         <div className=' bg-black/20 w-[45%] h-150 flex flex-col rounded-xl backdrop-blur-md border border-white/20 shadow-md justify-evenly CCards'>
 
@@ -37,7 +37,7 @@ const Classes = () => {
                 </div>
             </div>
             <div className=' flex justify-center'>
-               <p className="bg-black/20 w-[80%] px-5 py-2 backdrop-blur-md shadow-md  borders rounded-md text-[#d5eff8] font-bold ">Build strong foundations with books and notes for classes 1st–8th. Designed for easy understanding and early learning.</p>
+               <p className="bg-black/20 w-[80%] px-5 py-2 backdrop-blur-md borders rounded-md text-[#d5eff8] font-bold ">Build strong foundations with books and notes for classes 1st–8th. Designed for easy understanding and early learning.</p>
             </div>
         </div>
 

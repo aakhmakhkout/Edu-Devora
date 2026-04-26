@@ -18,8 +18,8 @@ const navbar = () => {
          <ul className='bg-[#f69d11] flex justify-evenly items-center w-full text-xl h-15 rounded-l-full text-[#0e162a] font-bold'>
 
           <li><a href="/">Home</a></li>
-          <li><a href="#ClassesAndCourses">Classes/Courses</a></li>
-          <li><a href="#About">About</a></li>
+          <li><a href="#Classes">Classes</a></li>
+          <li><a href="#Courses">Courses</a></li>
           <li><a href="#Contact">Contact</a></li>
           <Link to="login" className='loginbtn'>Login/SignUp</Link>
           

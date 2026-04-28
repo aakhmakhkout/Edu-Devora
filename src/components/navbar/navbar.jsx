@@ -1,6 +1,7 @@
 import React from 'react'
 import img from "../../assets/logo2.jpg"
 import Gototop from './gototop'
+import Devora from "./devora.jsx"
 import { Link } from 'react-router-dom'
 
 const navbar = () => {
@@ -27,6 +28,9 @@ const navbar = () => {
         </div>
         <div className='fixed top-30 right-5'>
           <Gototop />
+        </div>
+        <div className='fixed bottom-5 right-5 z-50'>
+          <Devora />
         </div>
     </div>
   )

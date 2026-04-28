@@ -184,3 +184,38 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
     transform: scale(1.1);
     transition: all ease 0.3s;
 }
+
+.devora-ai {
+    transition: all ease 0.3s;
+    filter: drop-shadow(0 0 3px #0a12e1);
+}
+.devora-ai:hover {
+    transition: all ease 0.3s;
+}
+.devora-ai:hover > img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #0a12e1);
+    transition: all ease 0.3s;
+}
+
+.devora-ai:hover > p::before {
+    content: "Hi, I’m Devora — your study buddy 👋";
+    font-size: 13px;
+    padding: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    opacity: 0.8;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: all ease 0.3s;
+
+}
+
+.facilityCardsBtn {
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.facilityCardsBtn:hover {
+    transform: scale(1.2) translateY(15px);
+    transition: all ease 0.3s;
+}

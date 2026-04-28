@@ -30,7 +30,7 @@ const Facilities = () => {
     }
   ]
   return (
-    <div className="flex flex-col justify-center items-center relative -top-25 z-1000">
+    <div className="flex flex-col justify-center items-center relative -top-25 z-10">
         {/* <div className="absolute -top-25 bg-[#2e3771] px-20 py-3 text-4xl font-extrabold text-[#fffeff]  shadow-md">
             <h1>Facilities</h1>
         </div> */}
@@ -52,7 +52,7 @@ const Facilities = () => {
                     </div>
         
                     <div>
-                        <button className="bg-[#f69d11] px-3 py-1 rounded-md shadow-lg text=[#0e162a] font-bold">Learn More</button>
+                        <button className="bg-[#f69d11] px-3 py-1 rounded-md shadow-lg text=[#0e162a] font-bold facilityCardsBtn"><a href="#Classes">Learn More</a></button>
                     </div>
                 </div>
             })}

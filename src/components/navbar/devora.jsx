@@ -1,11 +1,17 @@
-import {ArrowBigUp} from "lucide-react"
+import { Link } from 'lucide-react';
+import devoralogo from "../../assets/devora.png"
+import { useState } from 'react';
 
-const gototop = () => {
+export default function Devora() {
   return (
-    <div className="bg-[#6464dc] rounded-full p-2 text-white gtt">
-        <a href="#"><ArrowBigUp size={32} strokeWidth={2} /></a>
+    <div >
+      <button className='devora-ai flex items-center'>
+            <p className='devoraText'></p>
+            <img src={devoralogo} alt="devora" className='w-30 cursor-pointer'/>
+        </button>
     </div>
-  )
+  );
 }
 
-export default gototop
+
+

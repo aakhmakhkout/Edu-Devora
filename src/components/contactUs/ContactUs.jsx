@@ -27,10 +27,10 @@ const ContactUs = () => {
   ]
 
   const logos = [
-    {id:1, logo: insta, link: "https://www.instagram.com/aakh_makh_kout/"},
-    {id:2, logo: github, link: "https://www.github.com/aakhmakhkout"},
-    {id:3, logo: linkedin, link: "https://www.linkedin.com/in/xymoexyom"},
-    {id:4, logo: portfolio, link: "www.linkedin.com/in/xymoexyom"}
+    {id:1, logo: insta, link: "https://www.instagram.com/aakh_makh_kout/", title:"instagram"},
+    {id:2, logo: github, link: "https://www.github.com/aakhmakhkout", title:"github"},
+    {id:3, logo: linkedin, link: "https://www.linkedin.com/in/xymoexyom", title:"linked in"},
+    {id:4, logo: portfolio, link: "www.linkedin.com/in/xymoexyom", title:"portfolio"}
   ]
 
   return (
@@ -72,7 +72,7 @@ const ContactUs = () => {
              {logos.map((values)=> {
                 return <div key={values.id} className="flex">
                   <a href={values.link} target="_blank">
-                  <img src={values.logo} alt="logos" className="w-10 sociallogo"/>
+                  <img src={values.logo} alt="logos" className="w-10 sociallogo" title={values.title}/>
                   </a>
                 </div>
              })}

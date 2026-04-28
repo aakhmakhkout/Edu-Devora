@@ -1,13 +1,16 @@
 import React from 'react'
 import Classes from './Classes.jsx'
 import Courses from "./Courses.jsx"
+import CourseData from "../../data/courses.js"
 
 
 const ClassesAndCourses = () => {
   return (
     <div className=' classesDiv'>
        <Classes />
-       <Courses />
+      
+       <Courses  data={CourseData}/>
+  
     </div>
   )
 }

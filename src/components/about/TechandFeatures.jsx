@@ -62,18 +62,18 @@ const TechandFeatures = () => {
           </div>
 
 
-          <div className='flex flex-col relative w-[50%] h-full  aboutImgs gap-10 justify-center'>
+          <div className='flex flex-col w-[50%] h-full  aboutImgs gap-10 justify-center'>
 
-            <div className='flex justify-evenly'>
-            <img src={reactImg} alt="img" className='w-45'/>
-            <img src={htmlImg} alt="img" className='w-45'/>
-            <img src={cssImg} alt="img" className='w-45'/>
+            <div className='flex justify-evenly items-center'>
+            <img src={reactImg} alt="img" className='w-40'/>
+            <img src={htmlImg} alt="img" className='w-40'/>
+            <img src={cssImg} alt="img" className='w-35'/>
             </div>
 
-            <div className='flex justify-evenly'>
-            <img src={devoraImg} alt="img" className='w-45'/>
-            <img src={tailwindImg} alt="img" className='w-45'/>
-            <img src={PracticeImg} alt="img" className='w-45'/>
+            <div className='flex justify-evenly items-center'>
+            <img src={devoraImg} alt="img" className='w-40'/>
+            <img src={tailwindImg} alt="img" className='w-40'/>
+            <img src={PracticeImg} alt="img" className='w-35'/>
             </div>
 
           </div>

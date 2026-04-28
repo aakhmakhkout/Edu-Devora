@@ -78,7 +78,7 @@ html {
 
 .aboutImgs > div > img:hover {
     transition: all ease 0.3;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .classesDiv {

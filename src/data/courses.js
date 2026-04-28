@@ -1,14 +1,12 @@
-import React from 'react'
-
 import bca from "../../assets/bca.png"
 import btech from "../../assets/btech.png"
 import bba from "../../assets/bba.png"
 import nursing from "../../assets/nursing.png"
 import llb from "../../assets/llb.png"
 import ba from "../../assets/ba.png"
-import Istclass from "../../components/ClassesAndCourses/Courses.jsx"
 
- const CourseCards = [
+
+const CourseCards = [
       {
         id:1,
         src: bca,
@@ -53,13 +51,3 @@ import Istclass from "../../components/ClassesAndCourses/Courses.jsx"
       },
 
     ]
-
-const ist = () => {
-  return (
-    <div>
-     <Istclass data={CourseCards}/>
-    </div>
-  )
-}
-
-export default ist

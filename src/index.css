@@ -6,6 +6,10 @@ html {
 .hero {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+.navlinks > ul > li {
+    border-radius: 10px;
+}
 .navlinks > ul > li, .loginbtn{
     padding: 5px 10px;
     transition: all ease 0.4s;
@@ -56,12 +60,34 @@ html {
 
 .cards {
     transition: all ease 0.3s;
- box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
-    
-    .cards:hover {
-  transform: translateY(-8px) scale(1.1);
+    filter: drop-shadow(0 0 5px #260f54);
+}
+
+.cards:hover {
+    transform: translateY(-8px) scale(1.1);
+    filter: drop-shadow(0 0 8px #371777);
   transition: all ease 0.3s;
+}
+
+.cards:hover .facilitycardicons {
+  transform: rotate(40deg);
+  transition: all ease 0.3s;
+}
+
+.facilityCardsBtn {
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.cards:hover .facilityCardsBtn {
+    transition: all ease 0.3s;
+    transform: translateY(15px);
+}
+
+.facilityCardsBtn:hover {
+    transition: all ease 0.3s;
+    background-color: #6464dc;
+    color: white;
 }
 
 .hrLine {
@@ -69,8 +95,6 @@ html {
     justify-content: center;
     height: 30px;
 }
-
-
 
 .aboutimages  {
     transition: all ease 0.3s;
@@ -226,14 +250,8 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 
 }
 
-.facilityCardsBtn {
-    transition: all ease 0.3s;
-    cursor: pointer;
-}
-.facilityCardsBtn:hover {
-    transform: scale(1.2) translateY(15px);
-    transition: all ease 0.3s;
-}
+
+
 
 .aboutcards {
     border: 1px solid rgba(255, 255, 255, 0.103);

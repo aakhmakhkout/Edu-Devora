@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from "./pages/home.jsx"
 import ClassesAndCourses from './components/ClassesAndCourses/ClassesAndCourses.jsx'
-import AboutUs from './components/about/AboutandTech.jsx'
+import AboutUs from './components/about/About.jsx'
 import ContactUs from './components/contactUs/ContactUs.jsx'
 import Ist from "./pages/lowerclasses/ist.jsx"
 import Second from "./pages/lowerclasses/second.jsx"
@@ -18,7 +18,7 @@ const App = () => {
     <div className='main'>
       <Routes>
         <Route path="/"  element={<Home />} />
-        <Route path="/ist"  element={<Ist />}/>
+        <Route path="#Classes/ist"  element={<Ist />}/>
         <Route path="/second"  element={<Second />}/>
         <Route path="/ninth"  element={<Ninth />}/>
         <Route path="/underdevelopment"  element={<UnderDevelopment />}/>

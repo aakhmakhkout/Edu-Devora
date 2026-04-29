@@ -2,6 +2,7 @@ import React from 'react'
 import Classes from './Classes.jsx'
 import Courses from "./Courses.jsx"
 import CourseData from "../../data/courses.js"
+console.log(CourseData)
 
 
 const ClassesAndCourses = () => {

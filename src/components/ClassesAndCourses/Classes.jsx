@@ -26,7 +26,7 @@ const Classes = () => {
                 </div>
 
                 <div className="bg-[#0f172b] w-full h-40 py-5 flex justify-center items-center gap-5 flex-wrap rounded-2xl lbtnsDiv backdrop-blur-md borders">
-                    <Link className="lbtn" to="ist" target="_blank">1st</Link>
+                    <Link className="lbtn" to="#Classes/ist" target="_blank">1st</Link>
                     <Link className="lbtn" to="second" target="_blank">2nd</Link>
                     <Link className="lbtn" to="underdevelopment" target="_blank">3rd</Link>
                     <Link className="lbtn" to="underdevelopment" target="_blank">4th</Link>

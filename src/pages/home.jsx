@@ -1,5 +1,5 @@
 import Hero from "../components/hero/hero.jsx"
-import ClassesAndCourses from '../components/ClassesAndCourses/ClassesAndCourses.jsx'
+import Classes from '../components/ClassesAndCourses/LowerAndHigherClasses/Classes.jsx'
 import About from '../components/about/About.jsx'
 import { Outlet } from 'react-router-dom'
 import ContactUs from '../components/contactUs/ContactUs.jsx'
@@ -34,8 +34,8 @@ const home = () => {
         <About />
       </section>
 
-      <section id="ClassesAndCourses">
-        <ClassesAndCourses />
+      <section id="Classes">
+        <Classes />
       </section>
 
       <section id="Contact">

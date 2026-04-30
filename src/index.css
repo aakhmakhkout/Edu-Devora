@@ -21,6 +21,7 @@ html {
     border-radius: 10px;
     /* border: 1px solid #000000; */
     transition: all ease 0.3s;
+    filter: drop-shadow(0 0 8px #4c11c0);
 }
 
 
@@ -35,19 +36,29 @@ html {
     transform: scale(1.1);
 }
 
-.herobtns > .btn1 {
+.herobtns > .btn1, .classesBtn {
      box-shadow: rgba(57, 72, 131, 0.35) 0px 5px 15px;
      transition: all ease 0.3s;
 }
 
-.herobtns > .btn1:hover {
+.herobtns > .btn1:hover, .classesBtn:hover {
     transition: all ease 0.3s;
     background-color: #6464dc;
     color: white;
 }
 
+.btn2 {
+transition: all ease 0.3s;
+color: white;
+background-color: #6464dc;
+}
+.btn2:hover {
+transition: all ease 0.3s;
+color: #0e162a;
+background-color: #f69d11;
+}
+
 .herobtns > .btn2 {
-    border: 1px solid #f69d11;
     color:white;
     transition: all ease 0.3s;
 }
@@ -73,6 +84,8 @@ html {
   transform: rotate(40deg);
   transition: all ease 0.3s;
 }
+
+
 
 .facilityCardsBtn {
     transition: all ease 0.3s;
@@ -111,12 +124,17 @@ html {
 .aboutimages2 >img {
     transition: all ease 0.3s;
     filter: drop-shadow(0 0 15px #2b1251);
-    width: 1000px;
+    width: 800px;
 }
 
-.aboutimages2 >img:hover {
+.aboutimages2 >img:hover, .classesTopImg:hover {
     transition: all ease 0.3;
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.classesTopImg {
+    transition: all ease 0.3s;
+    filter: drop-shadow(0 0 15px #2b1251);
 }
 
 
@@ -212,7 +230,11 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 }
 
 .contactformborder {
-    border: 1px solid #234AE4;
+    border: 1px solid #ffffff39;
+}
+.contactformborder:focus {
+    border: 1px solid #472d8386;
+    filter: drop-shadow(0 0 5px #080955);
 }
 
 .contactformbtns {
@@ -252,7 +274,6 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 
 
 
-
 .aboutcards {
     border: 1px solid rgba(255, 255, 255, 0.103);
     box-shadow: 0px 0px 10px 5px rgba(33, 15, 57, 0.9);
@@ -275,4 +296,56 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 .aboutcardsicons {
     filter: drop-shadow(0 0 5px #5a0f7d);
     border: 1px solid rgba(255, 255, 255, 0.127);
+}
+
+.contact {
+    transition: all ease 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    filter: drop-shadow(0 0 10px #090a34);
+}
+
+.contact:hover {
+    transition: all ease 0.3s;
+    transform: translateY(-20px);
+    border: 1px solid rgba(36, 29, 112, 0.237);
+    filter: drop-shadow(0 0 5px #080955);
+
+}
+
+.classesSearch {
+    transition: all ease 0.3s;
+}
+
+.classesSearch:focus {
+     transition: all ease 0.3s;
+    border: 1px solid rgba(81, 50, 128, 0.556);
+    filter: drop-shadow(0 0 5px #2b1d53);
+
+}
+.classCards {
+    transition: all ease 0.3s;
+    /* filter: drop-shadow(0 0 5px #19153022); */
+}
+
+.classCards:hover {
+    transition: all ease 0.3s;
+    filter: drop-shadow(0px 0 5px #9a4dff92);
+    transform: scale(1.1);
+}
+
+.blue {
+ color: #6464dc;
+}
+
+.orange {
+    color: #f59c12;
+}
+
+.classCardsContent {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    filter: drop-shadow(0px 0 5px #4b178a);
+    background-color: #6464dcbd;
 }

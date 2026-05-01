@@ -1,10 +1,11 @@
 import React from 'react'
-import CatagoriesSec from './CatagoriesSec'
-
+import Bookmarks from './Bookmarks.jsx'
+import Stats from './stats.jsx'
 const Right = () => {
   return (
-    <div>
-        <CatagoriesSec />
+    <div className='w-70 flex flex-col gap-10'>
+        <Bookmarks />
+        <Stats />
     </div>
   )
 }

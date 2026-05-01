@@ -7,6 +7,7 @@ import Facilities from '../components/hero-facilities/facilities.jsx'
 import Navbar from "../components/navbar/navbar.jsx"
 import Devora from "../components/navbar/devora.jsx"
 import facilityData from "../data/Facility.js"
+import CoursesSection from "../components/ClassesAndCourses/Courses/CoursesSection.jsx"
 
 
 
@@ -36,6 +37,10 @@ const home = () => {
 
       <section id="Classes">
         <Classes />
+      </section>
+
+      <section id="Courses">
+        <CoursesSection />
       </section>
 
       <section id="Contact">

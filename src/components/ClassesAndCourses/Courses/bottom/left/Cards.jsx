@@ -5,7 +5,8 @@ const Cards = ({courseData}) => {
     <div className='bg-black/20 text-white p-10 rounded-[10px] borders backdrop-blur-md shadow-md'>
       <div className='grid grid-cols-4 gap-5 auto-rows-fr'>
         {courseData.map(({id, courseName, catag, img, description, lessons, hours})=> {
-          return <div key={id} className='w-80 h-full flex flex-col bg-[#33399033] p-5 gap-3 justify-center relative rounded-[10px] courseCards cursor-pointer'>
+
+            return <div key={id} className='w-80 h-full flex flex-col bg-[#33399033] p-5 gap-3 justify-center relative rounded-[10px] courseCards cursor-pointer'>
 
               <div className='flex justify-center h-[50%] items-center'>
                 <img src={img} alt="img" className='w-30'/>
@@ -35,9 +36,9 @@ const Cards = ({courseData}) => {
                 </div>
             </div>
         })}
-      </div>
-    </div>
-  )
+        </div>
+        </div>
+      )
 }
 
 export default Cards

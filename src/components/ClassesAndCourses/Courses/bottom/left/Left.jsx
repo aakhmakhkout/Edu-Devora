@@ -2,19 +2,20 @@ import React, { useState } from 'react'
 import Cards from './Cards'
 import Pagination from './Pagination'
 
-const Left = ({CData}) => {
-  const initialData = {
-    startidx: 0,
-    endidx:8,
-    currentPage: 1
-  }
-  const [indexes, setIndexes] = useState(initialData)
-  const slicedData = CData.slice(indexes.startidx, indexes.endidx);
-  
+const Left = ({CData, data, IdxState}) => {
+   const {indexes} = IdxState
+  const itemsperpage = 8;
+  const slicedData = CData.filter((values) => {
+    return values.catag === data || data === "All Catagories"
+  })
+
+  const itemsDisplay = slicedData.slice(indexes.startidx, indexes.endidx)
+
+  // console.log(slicedData)  
   return (
     <div className='flex flex-col justify-between'>
-      <Cards courseData = {slicedData}/>
-      <Pagination courseData={CData} state={{indexes, setIndexes}}/>
+      <Cards courseData = {itemsDisplay}/>
+      <Pagination courseData={CData} state={IdxState}/>
     </div>
   )
 }

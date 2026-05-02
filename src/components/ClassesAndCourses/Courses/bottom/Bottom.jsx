@@ -3,10 +3,12 @@ import Left from './left/Left'
 import Right from './right/Right'
 
 
-const Bottom = ({coursedata}) => {
+const Bottom = ({coursedata, state, indexesState}) => {
+ 
+  // console.log(state)
   return (
     <div className='flex mt-3 justify-between'>
-       <Left CData = {coursedata}/>
+       <Left CData = {coursedata} data = {state} IdxState = {indexesState}/>
        <Right />
     </div>
   )

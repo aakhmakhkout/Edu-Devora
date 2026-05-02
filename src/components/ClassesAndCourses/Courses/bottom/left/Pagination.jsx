@@ -3,7 +3,6 @@ import { useState } from "react"
 
 
 const Pagination = ({courseData, state}) => {
-  // const [currentPage, setcurrentPage] = useState(1)
   const itemsPerPage = 8
   const pageNumbers = (courseData.length / itemsPerPage)
   const pages = Math.ceil(pageNumbers)
@@ -14,7 +13,6 @@ const Pagination = ({courseData, state}) => {
     for(let idx = 0; idx < pages; idx++) {
        pagesArr.push(idx+1);
     }
-
 
 
   const updateState = (idx) => {

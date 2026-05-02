@@ -1,7 +1,6 @@
 import { Bookmark, ChartNoAxesColumn, Clock } from 'lucide-react';
 
 const Cards = ({courseData}) => {
-  console.log(courseData)
   return (
     <div className='bg-black/20 text-white p-10 rounded-[10px] borders backdrop-blur-md shadow-md'>
       <div className='grid grid-cols-4 gap-5 auto-rows-fr'>

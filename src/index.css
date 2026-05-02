@@ -387,3 +387,41 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
     filter: drop-shadow(0px 0 2px #4530a5);
     transform: scale(1.05);
 }
+
+.coursePagesNormal {
+    background-color: #131938;
+    padding: 2px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.coursePagesActive {
+    background-color: #586fe3;
+    padding: 2px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.isCourseBtn {
+    background-color: #f69d11;
+    border-radius: 10px;
+    margin: 0px 20px;
+    transition: all ease 0.3s;
+    filter: drop-shadow(0px 0 2px #c79d20);
+    cursor: pointer;
+    &:hover {
+        transition: all ease 0.3s;
+        transform: scale(1.05);
+        filter: drop-shadow(0px 0 4px #a87515);
+    }
+}
+.isCourseBtnNot {
+    /* display: none; */
+    background-color: #f69d11;
+    opacity: 30%;
+    border-radius: 10px;
+    cursor:not-allowed;
+    margin: 0px 20px;
+}

@@ -6,14 +6,15 @@ const Left = ({CData}) => {
   const initialData = {
     startidx: 0,
     endidx:8,
+    currentPage: 1
   }
   const [indexes, setIndexes] = useState(initialData)
   const slicedData = CData.slice(indexes.startidx, indexes.endidx);
   
   return (
-    <div className=''>
+    <div className='flex flex-col justify-between'>
       <Cards courseData = {slicedData}/>
-      <Pagination />
+      <Pagination courseData={CData} state={{indexes, setIndexes}}/>
     </div>
   )
 }

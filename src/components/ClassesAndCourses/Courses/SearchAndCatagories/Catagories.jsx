@@ -1,11 +1,8 @@
 
 const Catagories = ({ctgData, stateData, idxState}) => {
-    console.log(idxState)
     const {indexes, setIndexes} = idxState
     const {state} = stateData
-    // console.log(state)
     const {CatagData, setCatagData} = state
-    // console.log(CatagData)
 
   return (
         <div className="text-white w-50 h-12 flex justify-center">

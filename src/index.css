@@ -425,3 +425,36 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
     cursor:not-allowed;
     margin: 0px 20px;
 }
+
+.courseLink {
+    cursor:pointer;
+    transition: all ease 0.3s;
+    & :hover {
+        transition: all ease 0.3s;
+        color: #f69d11
+}
+}
+
+.bookmarkBtn {
+    transition: all ease 0.3s;
+    &:hover {
+        /* transition:all ease 0.3s; */
+        transform: scale(1.2);
+    }
+}
+
+.bmkCname {
+   background-color: #33399033;
+   padding: 5px 10px;
+   font-size: 14px;
+   border-radius: 10px;
+   font-weight: 600;
+}
+
+.bmkOffBtn {
+    transition: all ease 0.3s;
+    cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+            }
+}

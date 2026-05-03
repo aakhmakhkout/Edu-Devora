@@ -458,3 +458,7 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
                 transform: scale(1.2);
             }
 }
+
+.bmkDiv::-webkit-scrollbar {
+    display: none;
+}

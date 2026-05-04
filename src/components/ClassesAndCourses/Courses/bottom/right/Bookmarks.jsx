@@ -34,7 +34,7 @@ const removeBookmark = (idx)=> {
         <ul className="w-full flex flex-col gap-3 ">
         {filteredArr.map(({id, courseName})=> {
           return <li key={id} className="flex justify-between">
-            <Link className="bmkCname courseCards">{courseName}</Link>
+            <Link className="bmkCname courseCards" to={`/${id}`}>{courseName}</Link>
             <button className="bmkOffBtn" onClick={()=> {
               removeBookmark(id)
             }}>

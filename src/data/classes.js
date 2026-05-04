@@ -1,43 +1,51 @@
 
 
 export const lowerClassesData = [
-    {
-        whichclass: 1,
+    {   
+        whichClass:"1st",
+        id: 1,
         classsup:"st",
         colorCls: "blue"
     },
     {
-        whichclass: 2,
+        whichClass:"2nd",
+        id: 2,
         classsup:"nd",
         colorCls: "orange"
     },
     {
-        whichclass: 3,
+        whichClass:"3rd",
+        id: 3,
         classsup:"rd",
         colorCls: "blue"
     },
     {
-        whichclass: 4,
+        whichClass:"4th",
+        id: 4,
         classsup:"th",
         colorCls: "orange"
     },
     {
-        whichclass: 5,
+        whichClass:"5th",
+        id: 5,
         classsup:"th",
         colorCls: "blue"
     },
     {
-        whichclass: 6,
+        whichClass:"6th",
+        id: 6,
         classsup:"th",
         colorCls: "orange"
     },
     {
-        whichclass:7,
+        whichClass:"7th",
+        id:7,
         classsup:"th",
         colorCls: "blue"
     },
     {
-        whichclass: 8,
+        whichClass:"8th",
+        id: 8,
         classsup:"th",
         colorCls: "orange"
     },
@@ -46,22 +54,26 @@ export const lowerClassesData = [
 
 export const higherClassesData = [
     {
-        whichclass: 9,
+        whichClass:"9th",
+        id: 9,
         classsup:"th",
         colorCls: "blue"
     },
     {
-        whichclass: 10,
+        whichClass:"10th",
+        id: 10,
         classsup:"th",
         colorCls: "orange"
     },
     {
-        whichclass: 11,
+        whichClass:"11th",
+        id: 11,
         classsup:"th",
         colorCls: "blue"
     },
     {
-        whichclass: 12,
+        whichClass:"12th",
+        id: 12,
         classsup:"th",
         colorCls: "orange"
     }

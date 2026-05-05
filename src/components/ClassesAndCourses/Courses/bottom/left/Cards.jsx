@@ -24,7 +24,7 @@ const Cards = ({courseData, bmData}) => {
 
                 <div className='flex flex-col justify-end h-[45%]'>
                   <div className='flex flex-col gap-1'>
-                  <Link  to={`/${id}`} className='courseLink'>
+                  <Link  to={`/${id}`} className='courseLink' target='_blank'>
                     <h1 className='font-bold text-xl'>{courseName}</h1>
                 </Link> 
                      <p className='text-[13px] text-white/70'>{description}</p>

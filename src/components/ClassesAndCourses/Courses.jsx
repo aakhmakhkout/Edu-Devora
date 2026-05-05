@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -20,7 +19,7 @@ const Courses = ({data}) => {
                       <div className='bg-[#0e162a] w-55 h-45 flex justify-center items-center borders rounded-xl'>
                       <img src={values.src} alt="img" className='w-45 '/>
                       </div>
-                      <Link className='CoursesBtn' to={values.path}>{values.courseName}</Link>
+                      <Link className='CoursesBtn' to={values.path} target='_blank'>{values.courseName}</Link>
                       <p className='text-white/70'>{values.description}</p>
                     </div>
                   </div>

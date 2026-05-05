@@ -2,10 +2,8 @@ import { Link } from "react-router-dom"
 import courseTopimg from "../../../assets/coursesTop.png"
 import {Clock, Users, FolderClock, Radio, BookOpen, NotepadText} from "lucide-react"
 
-const Top = ({urlId, data}) => {
-  const {classDetails, courseDetails} = data
-
-  const result = (classDetails.find(items => items.id === urlId) || courseDetails.find(items2 => items2.id === parseInt(urlId)));
+const Top = ({data}) => {
+  const {result} = data
 
     const isCourse = result.type === "course";
     const cardWorkLabel = isCourse ? "Projects" : "Assignments";

@@ -219,11 +219,11 @@ export const courseDetails = [
     type: "course",
     courseName: "BCA Complete Course",
     subjects: [
-      { name: "Programming", topics: ["C", "Java", "Python"] },
-      { name: "Database", topics: ["SQL", "MongoDB"] },
-      { name: "Web Dev", topics: ["HTML", "CSS", "JS"] },
-      { name: "Operating Systems", topics: ["Processes", "Memory"] },
-      { name: "Networking", topics: ["OSI", "Protocols"] }
+      {id:1, name: "Programming", topics: ["C", "Java", "Python"] },
+      {id:2, name: "Database", topics: ["SQL", "MongoDB"] },
+      {id:3, name: "Web Dev", topics: ["HTML", "CSS", "JS"] },
+      {id:4, name: "Operating Systems", topics: ["Processes", "Memory"] },
+      {id:5, name: "Networking", topics: ["OSI", "Protocols"] }
     ],
     topics: 90,
     duration: 3,
@@ -236,11 +236,11 @@ export const courseDetails = [
     type: "course",
     courseName: "Full Stack Web Development",
     subjects: [
-      { name: "Frontend", topics: ["React", "Hooks", "Routing"] },
-      { name: "Backend", topics: ["Node", "Express"] },
-      { name: "Database", topics: ["MongoDB", "Schemas"] },
-      { name: "Authentication", topics: ["JWT", "OAuth"] },
-      { name: "Deployment", topics: ["Vercel", "Netlify"] }
+      {id:1, name: "Frontend", topics: ["React", "Hooks", "Routing"] },
+      {id:2, name: "Backend", topics: ["Node", "Express"] },
+      {id:3, name: "Database", topics: ["MongoDB", "Schemas"] },
+      {id:4, name: "Authentication", topics: ["JWT", "OAuth"] },
+      {id:5, name: "Deployment", topics: ["Vercel", "Netlify"] }
     ],
     topics: 110,
     duration: 4,
@@ -253,7 +253,7 @@ export const courseDetails = [
     type: "course",
     courseName: "Data Science & Analytics",
     subjects: [
-      { name: "Python", topics: ["Pandas", "NumPy"] },
+      {id:1, name: "Python", topics: ["Pandas", "NumPy"] },
       { name: "Statistics", topics: ["Mean", "Variance"] },
       { name: "Machine Learning", topics: ["Regression", "Classification"] },
       { name: "Visualization", topics: ["Matplotlib"] },

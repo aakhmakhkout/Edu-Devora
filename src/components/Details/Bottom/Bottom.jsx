@@ -50,7 +50,7 @@ const ShowHideList = () => {
                             else {
                                 setToggle(true)
                              }
-                            }} className={`cursor-pointer`}><ChevronDown size={25} strokeWidth={1.5}/></button>
+                            }} className={`cursor-pointer/`}><ChevronDown size={25} strokeWidth={1.5}/></button>
                             </div>
                             </div>
                         </div>

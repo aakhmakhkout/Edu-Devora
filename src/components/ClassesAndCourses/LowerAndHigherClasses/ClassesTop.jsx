@@ -11,12 +11,12 @@ const ClassesTop = () => {
       </div>
 
       <div>
-        <ClassSearch />
+        {/* <ClassSearch /> */}
       </div>
       </div>
 
       <div>
-        <img src={ClassTop} alt="Classes bg image"  className="w-150 classesTopImg"/>
+        <img src={ClassTop} alt="Classes bg image"  className="w-100 classesTopImg"/>
       </div>
     </div>
   )

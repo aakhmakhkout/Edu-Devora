@@ -7,7 +7,7 @@ import Btm from "./bottom/Btm";
 const Classes = () => {
    
   return (
-<div className=' h-screen bg-[#050915] text-white' id="Classes">
+<div className=' min-h-screen bg-[#050915] text-white' id="Classes">
 
     <ClassesTop />
 

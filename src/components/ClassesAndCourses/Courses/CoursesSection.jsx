@@ -12,13 +12,14 @@ const CoursesSection = () => {
     }
   const [CatagData, setCatagData] = useState("All Catagories")
   const [indexes, setIndexes] = useState(initialData)
+  const [search, setSearch] = useState("")
   // console.log(CatagData)
   return (
     <div className='min-h-screen bg-[#0e162a] w-full flex flex-col items-center justify-center'>
         <div className='w-[90%] h-full'>
             <CoursesTop />
-            <SaC state = {{CatagData, setCatagData}} indexesState = {{indexes, setIndexes}}/>
-            <Bottom coursedata = {courseData} state = {CatagData} indexesState = {{indexes, setIndexes}}/>
+            <SaC state = {{CatagData, setCatagData}} indexesState = {{indexes, setIndexes}} searchState = {{search, setSearch}}/>
+            <Bottom coursedata = {courseData} state = {CatagData} indexesState = {{indexes, setIndexes}} searchState = {{search, setSearch}}/>
         </div>
     </div>
   )

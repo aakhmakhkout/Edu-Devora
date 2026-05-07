@@ -3,7 +3,7 @@ import Left from './left/Left.jsx'
 import Right from './right/Right'
 
 
-const Bottom = ({coursedata, state, indexesState}) => {
+const Bottom = ({coursedata, state, indexesState, searchState}) => {
   // const fallback = [
   //   {
   //     cId: "No bookmarks"
@@ -13,7 +13,7 @@ const [bookmarkData, setbookmarkData] = useState([])
  
   return (
     <div className='flex mt-3 justify-between'>
-       <Left CData = {coursedata} data = {state} IdxState = {indexesState} bmkData={{bookmarkData, setbookmarkData}}/>
+       <Left CData = {coursedata} data = {state} IdxState = {indexesState} bmkData={{bookmarkData, setbookmarkData}} searchData={searchState}/>
        <Right bmkData={{bookmarkData, setbookmarkData}}/>
     </div>
   )

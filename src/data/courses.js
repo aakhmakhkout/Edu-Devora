@@ -253,7 +253,7 @@ export const courseDetails = [
     type: "course",
     courseName: "Data Science & Analytics",
     subjects: [
-      {id:1, name: "Python", topics: ["Pandas", "NumPy"] },
+      { name: "Python", topics: ["Pandas", "NumPy"] },
       { name: "Statistics", topics: ["Mean", "Variance"] },
       { name: "Machine Learning", topics: ["Regression", "Classification"] },
       { name: "Visualization", topics: ["Matplotlib"] },

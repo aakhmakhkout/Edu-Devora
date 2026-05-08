@@ -18,7 +18,7 @@ const CoursesSearch = ({searchData}) => {
                 <div className=" absolute left-8 text-white/60 z-10">
                 <Search size={25} strokeWidth={1.5} />
                 </div>
-            <input type="text"  placeholder='Search course by name (e.g BCA, BBA etc)' className="bg-[#081430] w-[75%] h-10 text-center outline-none rounded-[10px] border border-white/15 classesSearch text-white" maxLength={10} onChange={(elem)=> {
+            <input type="text"  placeholder='Search course by name (e.g BCA, BBA etc)' className="bg-[#081430] w-[75%] h-10 text-center outline-none rounded-[10px] border border-white/15 classesSearch text-white" maxLength={30} onChange={(elem)=> {
                 getData(elem.target.value)
             }}/>
             <button className="bg-[#f69d11] px-5 py-2 rounded-lg text-[#0e162a] font-bold classesBtn active:scale-95" onClick={()=> {    

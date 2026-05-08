@@ -4,6 +4,7 @@ import {classDetails } from "../data/classes.js"
 import {courseDetails} from "../data/courses.js"
 import {Link, useParams} from "react-router-dom"
 import { House } from "lucide-react"
+import Devora from "../components/navbar/devora.jsx"
 
 
 const ClassDetails = () => {
@@ -15,7 +16,10 @@ const ClassDetails = () => {
   const isCourse = result.type === "course"
 
   return (
-    <div className="bg-[#080f21] min-h-screen flex flex-col items-center">
+    <div className="bg-[#080f21] min-h-screen flex flex-col items-center relative">
+      <div className="fixed bottom-10 right-10">
+        <Devora />
+      </div>
       <div className="h-20 w-[80%] text-white/80 flex items-center gap-3 ">
         <div className="flex items-end gap-2">
         <House size={25} strokeWidth={1.25} />

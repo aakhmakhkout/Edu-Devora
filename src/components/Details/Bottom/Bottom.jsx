@@ -12,17 +12,16 @@ const tps = result.subjects.map (({topics}) => topics)
 
 const ShowHideList = () => {
         if(toggle) {
-            return  <ul className={`flex flex-col justify-start items-start normal` }>  
+            return  <ul className="normal">  
                     {tps[topicsIdx].map((items, idx)=> {
-                        return <li key={idx}><Link href="">{items}</Link></li>
+                        return <Link to={items} className="w-full flex justify-center"><li key={idx} className="subListClass">{items}</li></Link>
                     })}
                 </ul>
             }
 }
 
-
   return (
-    <div  className="bg-[#0c1127] max-w-[80%] w-[80%] min-h-100 border border-white/10 rounded-[10px]">
+    <div  className="bg-[#0c1127] max-w-[80%] w-[80%] min-h-100 border border-white/10 rounded-[10px] mb-20">
         <div className="w-full flex flex-col items-center py-10 gap-5">
             <div className="flex flex-col gap-2 w-[80%]  justify-center items-start">
             <h1 className="text-4xl font-bold">{isCourse ? "Course Curriculum": "Class Curriculum"}</h1>
@@ -50,7 +49,7 @@ const ShowHideList = () => {
                             else {
                                 setToggle(true)
                              }
-                            }} className={`cursor-pointer/`}><ChevronDown size={25} strokeWidth={1.5}/></button>
+                            }} className="cursor-pointer"><ChevronDown size={25} strokeWidth={1.5}/></button>
                             </div>
                             </div>
                         </div>

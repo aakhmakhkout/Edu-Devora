@@ -362,7 +362,7 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.226);
     background-color:#6464dc50;
     width: 100%;
-    padding: 5px 10px;
+    padding: 0px 10px;
     border-radius: 10px;
     transition: all ease 0.3s;
 }
@@ -373,7 +373,7 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 }
 
 .courseCatagories > option {
-    background-color: #050915;
+    background-color: #0e162a;
 }
 
 .courseCards {
@@ -469,28 +469,34 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 }
 
 .normal {
-    display: none;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 20px;
     border-top: 2px solid rgba(100, 60, 146, 0.448);
     transition: all ease 0.3s;
 }
 
-.normal > li {
+.subListClass {
     display: flex;
-    height: 40px;
+    height: 50px;
     align-items: center;
+    justify-content: center;
     padding: 0px 10px;
     background-color: rgb(75, 62, 123);
-    width: 80%;
+    width: 50%;
+    font-weight: 600;
     border-radius: 10px;
     transition: all ease 0.3s;
     &:hover {
         transform: scale(1.05);
+        filter: drop-shadow(0px 0 4px #572d9f);
     }
 }
+
 
 .topicsListDiv { 
     transition: all ease 0.3s;

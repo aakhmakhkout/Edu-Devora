@@ -10,14 +10,18 @@ const model = devoraAI.getGenerativeModel({model: "gemini-3.1-flash-lite"})
 
 export default function Devora() {
   const [isClicked, setisClicked] = useState(false)
+  const [isLoading, setisLoading] = useState(false)
   // const [userQuery, setuserQuery] = useState("")
   
+  
   async function sendQuery(userQuery) {
+    setisLoading(true);
     const result = await model.generateContent(userQuery)
     const reply = result.response.text();
     setmessages((prev)=> {
       return [...prev, {role: "User", text: userQuery},{role: "Assistant", text: reply}]
     })
+    setisLoading(false)
   }
   
   const messagesObj = [
@@ -36,7 +40,7 @@ export default function Devora() {
   return (
     <div className='flex flex-col items-end'>
       <div>
-        {isClicked && <DevoraChatBox query = {sendQuery} data = {messages}/>}
+        {isClicked && <DevoraChatBox query = {sendQuery} data = {messages} loadingState ={isLoading}/>}
       </div>
       <button className='devora-ai flex items-center' onClick={()=> setisClicked(!isClicked)}>
             <p className='devoraText'></p>

@@ -250,7 +250,7 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 }
 
 .contactformbtns:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all ease 0.3s;
 }
 
@@ -521,6 +521,10 @@ box-shadow: 0px 0px 2px 0px rgba(100,100,220,0.9);
 
 .chatBot::-webkit-scrollbar {
     display: none;
+}
+
+.devoraInp {
+    background-color: rgba(73, 50, 137, 0.355);
 }
 
 .devoraInp:focus {

@@ -6,7 +6,6 @@ const DevoraChatBox = ({data, query, loadingState, hw}) => {
   const [isEmpty, setisEmpty] = useState(false)
 
   const {height, width} = hw
-  console.log(height, width)
 
 
   // const [chatDisplayClass, setCDC] = useState("assistant")
@@ -43,7 +42,7 @@ const DevoraChatBox = ({data, query, loadingState, hw}) => {
       <div className="h-20">
         <form onSubmit={(elem)=> elem.preventDefault()} className="flex flex-col justify-center items-center">
           <div className="flex gap-4 items-center">
-          <input disabled={loadingState} type="text" value={inputValues} className="borders w-100 h-10 rounded-[10px] px-2 outline-none devoraInp" placeholder="Enter your query" onChange={(elem)=> {
+          <input disabled={loadingState} type="text" value={inputValues} className="borders w-130 h-13 rounded-full px-4 outline-none devoraInp" placeholder="Ask your query" onChange={(elem)=> {
             setinputValues(elem.target.value)
           }}/>
           <button disabled={loadingState} onClick={()=> {

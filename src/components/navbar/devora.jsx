@@ -13,6 +13,8 @@ export default function Devora() {
   const [isLoading, setisLoading] = useState(false)
   // const [userQuery, setuserQuery] = useState("")
   
+  const height = 150;
+  const width = "100%";
   
   async function sendQuery(userQuery) {
     setisLoading(true);
@@ -38,9 +40,9 @@ export default function Devora() {
   
 
   return (
-    <div className='flex flex-col items-end'>
-      <div>
-        {isClicked && <DevoraChatBox query = {sendQuery} data = {messages} loadingState ={isLoading}/>}
+    <div className='flex flex-col items-end w-150'>
+      <div className='flex justify-end'>
+        {isClicked && <DevoraChatBox query = {sendQuery} data = {messages} loadingState ={isLoading} hw={{height, width}}/>}
       </div>
       <button className='devora-ai flex items-center' onClick={()=> setisClicked(!isClicked)}>
             <p className='devoraText'></p>

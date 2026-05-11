@@ -7,6 +7,14 @@ html {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+.nl {
+    background-color: #6464dc;
+    padding: 7px 13px;
+    border-radius: 10px;
+    color: white;
+    filter: drop-shadow(0 0 8px #4c11c0);
+}
+
 .navlinks > ul > li {
     border-radius: 10px;
 }

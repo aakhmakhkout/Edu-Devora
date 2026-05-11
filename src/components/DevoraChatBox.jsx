@@ -1,21 +1,24 @@
 import { useState } from "react"
 import { Bot, User, Send, Loader } from "lucide-react"
 
-const DevoraChatBox = ({data, query, loadingState}) => {
+const DevoraChatBox = ({data, query, loadingState, hw}) => {
   const [inputValues, setinputValues] = useState("")
   const [isEmpty, setisEmpty] = useState(false)
+
+  const {height, width} = hw
+  console.log(height, width)
 
 
   // const [chatDisplayClass, setCDC] = useState("assistant")
   
 
   return (
-    <div className='w-130 h-120 bg-black/30 text-white rounded-[10px] borders backdrop-blur-md shadow-md devoraChatBox flex flex-col justify-between'>
+    <div className={`w-[${width}] h-${height} bg-black/30 text-white rounded-[10px] borders backdrop-blur-md shadow-md devoraChatBox flex flex-col justify-between`}>
 
-      <div className="h-100 overflow-y-scroll chatBot border-b-2 border-white/20 backdrop-blur-2xl p-4">
+      <div className="h-[85%]  overflow-y-scroll chatBot border-b-2 border-white/20 p-4">
         {data.map(({role, text}, idx)=> {
           return <div key={idx} className="flex justify-between w-full">
-            <div className="relative w-[50%]">
+            <div className="relative w-[60%]">
             {role === "Assistant" ? 
             <div className="flex bg-black/50 borders p-3 rounded-[10px] relative mt-4">
               <div className="absolute -top-7 left-0">
@@ -26,7 +29,7 @@ const DevoraChatBox = ({data, query, loadingState}) => {
               </div>
 
 
-              <div className="relative w-[50%]">
+              <div className="relative w-[40%]">
               {role === "User" && text!== "" ? 
               <div className="flex justify-end relative mt-2">   
               <div className="absolute -top-7 right-0">
@@ -37,7 +40,7 @@ const DevoraChatBox = ({data, query, loadingState}) => {
           </div>
         })}
       </div>
-      <div>
+      <div className="h-20">
         <form onSubmit={(elem)=> elem.preventDefault()} className="flex flex-col justify-center items-center">
           <div className="flex gap-4 items-center">
           <input disabled={loadingState} type="text" value={inputValues} className="borders w-100 h-10 rounded-[10px] px-2 outline-none devoraInp" placeholder="Enter your query" onChange={(elem)=> {

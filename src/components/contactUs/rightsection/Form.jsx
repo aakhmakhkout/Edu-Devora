@@ -1,7 +1,7 @@
 
 const Form = () => {
   return (
-    <div className='bg-[#0e162a] w-[48%] rounded-[10px] contact'>
+    <div className='bg-[#33399014] w-[48%] rounded-[10px] contact'>
             <form className="flex flex-col h-full justify-around items-center">
               <div className="flex gap-10 ">
                 <div className="flex flex-col gap-1">

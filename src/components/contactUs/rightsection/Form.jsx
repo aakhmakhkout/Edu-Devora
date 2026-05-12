@@ -9,10 +9,12 @@ const Form = () => {
   const [queryData, setQueryData] = useState([{}])
   const getInput = (element) => {
       setQueryData((prev)=> {
-        return {...prev, [element.name]: element.value}
+        
+        return {...prev, date: new Date(), isResolved: true, [element.name]: element.value}
       })
   }
 
+  console.log(createQuery)
   return (
     <div className='bg-[#33399014] w-[48%] rounded-[10px] contact flex flex-col items-center gap-4'>
             <form className="flex flex-col h-[80%] justify-around items-center" onSubmit={(element)=> {

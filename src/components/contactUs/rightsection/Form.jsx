@@ -4,22 +4,20 @@ import { QueryDetails } from "../../../context/queriesData"
 
 const Form = () => {
   const {createQuery, setcreateQuery} = useContext(QueryDetails)
-  // const {createQuery, setcreateQuery} = QueryDetails
 
-  const [queryData, setQueryData] = useState([{}])
+  const [queryData, setQueryData] = useState({})
   const getInput = (element) => {
-      setQueryData((prev)=> {
-        
-        return {...prev, date: new Date(), isResolved: true, [element.name]: element.value}
+      setQueryData((prev)=> {   
+        return {...prev, date: Date.now(), isResolved: true, [element.name]: element.value}
       })
   }
-
-  console.log(createQuery)
   return (
     <div className='bg-[#33399014] w-[48%] rounded-[10px] contact flex flex-col items-center gap-4'>
             <form className="flex flex-col h-[80%] justify-around items-center" onSubmit={(element)=> {
               element.preventDefault();
-              setcreateQuery(queryData)
+              setcreateQuery((prev)=> {
+                return [...prev, queryData]
+              })
             }}>
               <div className="flex gap-10 ">
                 <div className="flex flex-col gap-1">
@@ -72,7 +70,7 @@ const Form = () => {
 
              {/* <div className="flex flex-col w-full justify-center items-center"> */}
               
-              <Link className="bg-[#2e3771] w-full px-15 py-3 flex items-center justify-center rounded-[10px] text-2xl font-bold border border-white/30 contactformbtns active:scale-95 cursor-pointer" to="queries" target="_blank">My Queries</Link>
+              <Link className="bg-[#2e3771] w-full px-15 py-3 flex items-center justify-center rounded-[10px] text-2xl font-bold border border-white/30 contactformbtns active:scale-95 cursor-pointer" to="queries">My Queries</Link>
              {/* </div> */}
               </div>
           </div>

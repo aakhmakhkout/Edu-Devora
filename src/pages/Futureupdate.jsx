@@ -8,6 +8,7 @@ const Futureupdate = () => {
             <li>Quick Add Notes: Add + icon instead of devora ai chatbot, which will open a small menu, containing add notes, devora ai etc</li>
             <li>Practice and Test Page</li>
             <li>Ui Updates</li>
+            <li>Resolved/Pending catagories in queries page</li>
         </ul>
     </div>
   )

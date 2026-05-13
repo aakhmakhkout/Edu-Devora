@@ -5,10 +5,10 @@ import {BrowserRouter} from 'react-router-dom'
 import QueryData from "./context/queriesData.jsx"
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
   <QueryData>
+  <BrowserRouter>
     <App />
-  </QueryData>
   </BrowserRouter>
+  </QueryData>
   
 )

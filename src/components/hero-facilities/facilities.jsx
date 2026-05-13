@@ -1,8 +1,8 @@
 const Facilities = ({data}) => {
      
   return (
-    <div className="flex flex-col justify-center items-center relative -top-25 z-10"> 
-        <div className="flex justify-evenly w-full">
+    <div className="flex flex-col justify-center items-center relative -top-25 z-10 "> 
+        <div className="flex justify-evenly w-full flex-wrap max-lg:gap-5 ">
         
             {data.map((values)=> {
                 return <div key={values.id} className="w-60 min-h-70 bg-[#2e3771] flex flex-col justify-between px-3 py-1 items-center rounded-xl cards">

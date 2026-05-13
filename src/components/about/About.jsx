@@ -6,7 +6,7 @@ import {aboutData} from '../../data/about.js'
 
 const About = () => {
   return (
-    <div className='h-screen w-full bg-[#0e162a] text-white flex flex-col justify-evenly'>
+    <div className='min-h-screen w-full bg-[#0e162a] text-white flex flex-col justify-evenly max-xl:py-5'>
         <AboutTop data={aboutData}/>
         <AbCards data={aboutCardData}/>
     </div>

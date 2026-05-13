@@ -1,6 +1,6 @@
 const Abcards = ({data}) => {
   return (
-    <div className="flex w-full justify-evenly">
+    <div className="flex w-full justify-evenly flex-wrap max-xl:gap-5">
       {data.map(({id, icon, alt, title, heading, description})=> {
         return <div className="w-70 bg-[#4f216e27] p-3 flex flex-col gap-3 rounded-[10px] backdrop-blur-md aboutcards" key={id}>
           <div className="flex items-center gap-5">

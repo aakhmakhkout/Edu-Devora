@@ -5,8 +5,8 @@ const Catagories = ({ctgData, stateData, idxState}) => {
     const {CatagData, setCatagData} = state
 
   return (
-        <div className="text-white w-60 h-12 flex justify-center">
-            <select name="catagories" id="catagories" className="outline-none courseCatagories font-bold text-lg" onChange={(elem)=> {
+        <div className="text-white w-60 h-12 flex justify-center max-lg:w-40">
+            <select name="catagories" id="catagories" className="outline-none courseCatagories font-bold text-lg max-lg:text-base" onChange={(elem)=> {
                         setCatagData(elem.target.value)
                         setIndexes((prev) => {return {startidx: 0, endidx: 8, currentPage: 1}})
                     }}>

@@ -4,7 +4,7 @@ import { CourseCatagories } from '../../../../data/courses.js'
 
 const SaC = ({state, indexesState, searchState}) => {
   return (
-    <div className='w-[83%] h-20 bg-[#2f2e5a13] flex items-center justify-between rounded-[10px] border border-white/10 coursesSaC'>
+    <div className='w-[86%] h-20 max-lg:w-full bg-[#2f2e5a13] flex items-center justify-between rounded-[10px] border border-white/10 coursesSaC'>
         <CoursesSearch searchData = {searchState}/>
         <Catagories ctgData={CourseCatagories} stateData ={{state}} idxState = {indexesState}/>
     </div>

@@ -21,7 +21,6 @@ const Cards = ({courseData, bmData}) => {
                   }}><Bookmark size={25} strokeWidth={2.5} /></button> 
                 </div>
                 </div>
-
                 <div className='flex flex-col justify-end h-[45%] max-lg:justify-start'>
                   <div className='flex flex-col gap-1'>
                   <Link  to={`/${id}`} className='courseLink' target='_blank'>

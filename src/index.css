@@ -128,11 +128,12 @@ background-color: #f69d11;
     transform: scale(1.2);
 }
 
-
+.aboutimages2 {
+    width: 40%;
+}
 .aboutimages2 >img {
     transition: all ease 0.3s;
     filter: drop-shadow(0 0 15px #2b1251);
-    width: 800px;
 }
 
 .aboutimages2 >img:hover, .classesTopImg:hover {

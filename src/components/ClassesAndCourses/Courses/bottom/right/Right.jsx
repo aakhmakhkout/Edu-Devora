@@ -5,7 +5,7 @@ import {courseData} from "../../../../../data/courses.js"
 
 const Right = ({bmkData}) => {
   return (
-    <div className='w-70 flex flex-col gap-10'>
+    <div className='w-70 flex flex-col gap-10 max-md:flex-row max-md:w-130 max-md:justify-between max-md:pb-10'>
         <Bookmarks bmData = {bmkData} CData= {courseData}/>
         <Stats />
     </div>

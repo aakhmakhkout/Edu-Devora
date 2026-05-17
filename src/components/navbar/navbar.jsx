@@ -6,7 +6,7 @@ import LoginBtn from './loginbtn.jsx'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between h-15 bg-[#030a1c] items-center backdrop-blur-md shadow-md '>
+    <div className='flex justify-between h-15 bg-[#030a1c] items-center backdrop-blur-md shadow-md'>
        <Navlogo src={logo}/>
         <Navlinks />        
         <LoginBtn />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const ClassCards = ({data}) => {
 
   return (
-    <div className=" w-full h-full flex flex-wrap max-md:grid max-md:grid-cols-2 gap-10 justify-center pb-10">
+    <div className=" w-full h-full flex flex-wrap max-md:grid max-md:grid-cols-2 gap-10 justify-center pb-10 max-md:overflow-y-scroll max-md:h-100 max-md:p-4">
       {data.map(({id, whichClass, classsup, colorCls})=> {
           return <Link key={id} target="_blank" to={`/${whichClass}`}>
                     <div className="bg-[#4e3a9630] w-full px-25 h-45 max-md:px-20 flex flex-col justify-evenly items-center rounded-[10px] borders classCards">

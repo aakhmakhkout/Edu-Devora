@@ -13,7 +13,7 @@ export default function Devora() {
   const [isLoading, setisLoading] = useState(false)
   // const [userQuery, setuserQuery] = useState("")
   
-  const height = 150;
+  const height = 120;
   const width = "80%";
   
   async function sendQuery(userQuery) {

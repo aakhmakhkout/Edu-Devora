@@ -12,8 +12,8 @@ const Bottom = ({coursedata, state, indexesState, searchState}) => {
 const [bookmarkData, setbookmarkData] = useState([])
  
   return (
-    <div className='flex mt-3 gap-10 max-md:flex-col'>
-      <div className='w-[90%] max-xl:w-full'>
+    <div className='flex mt-3 gap-5 max-lg:flex-col w-full max-lg:items-center'>
+      <div className='w-[80%] max-lg:w-full'>
        <Left CData = {coursedata} data = {state} IdxState = {indexesState} bmkData={{bookmarkData, setbookmarkData}} searchData={searchState}/>
       </div>
        <Right bmkData={{bookmarkData, setbookmarkData}}/>

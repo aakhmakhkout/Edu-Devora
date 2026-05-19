@@ -15,7 +15,7 @@ const CoursesSearch = ({searchData}) => {
             <form className="flex justify-around items-center w-full relative" onSubmit={(elem)=> {
                 elem.preventDefault();
             }}>
-                <div className=" absolute left-8 text-white/60 z-10">
+                <div className=" absolute left-8 text-white/60 z-10 max-md:left-3">
                 <Search size={25} strokeWidth={1.5} />
                 </div>
             <input type="text"  placeholder='Search course by name (e.g BCA, BBA etc)' className="bg-[#081430] w-[75%] max-2xl:text-sm h-10 text-center outline-none rounded-[10px] border border-white/15 classesSearch text-white" maxLength={30} onChange={(elem)=> {

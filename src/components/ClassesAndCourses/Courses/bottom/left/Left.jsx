@@ -23,7 +23,7 @@ const Left = ({CData, data, IdxState, bmkData, searchData}) => {
   const itemsDisplay = filteredCourseList.slice(indexes.startidx, indexes.endidx)
 
   return (
-    <div className='flex flex-col justify-between'>
+    <div className='flex flex-col justify-between w-full'>
       <Cards courseData = {itemsDisplay} bmData = {bmkData}/>
       <Pagination courseData={CData} state={IdxState}/>
     </div>

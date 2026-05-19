@@ -19,15 +19,15 @@ const Form = () => {
                 return [...prev, queryData]
               })
             }}>
-              <div className="flex gap-10 w-[90%]">
-                <div className="flex flex-col gap-1 w-[50%]">
+              <div className="flex gap-10 w-[90%] max-emd:flex-col max-emd:items-center">
+                <div className="flex flex-col gap-1 w-[50%] max-emd:w-full">
                   <label htmlFor="istname" className="text-white/90">First Name <span className="text-red-500">*</span></label>
                   <input type="text" name="firstname" id="istname" placeholder="Kaneki" value={queryData.firstname || ""} className="outline-0 bg-white/15 backdrop-blur-md shadow-md p-4 rounded-[10px] contactformborder" required maxLength={30} onChange={(element) => {
                     getInput(element.target);
                   }}/>
                 </div>
 
-                <div className="flex flex-col gap-1 w-[50%]">
+                <div className="flex flex-col gap-1 w-[50%] max-emd:w-full">
                   <label htmlFor="lastname" className="text-white/90">Last Name<span className="text-red-500">*</span></label>
                   <input type="text" name="lastname" id="lastname" value={queryData.lastname || ""} placeholder="Ken" className="outline-0 bg-white/15 backdrop-blur-md shadow-md p-4 rounded-[10px] contactformborder" required maxLength={30} onChange={(element) => {
                     getInput(element.target);
@@ -35,15 +35,15 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="flex gap-10 w-[90%]">
-                  <div className="flex flex-col gap-1 w-[50%]">
+              <div className="flex gap-10 w-[90%] max-emd:flex-col max-emd:items-center">
+                  <div className="flex flex-col gap-1 w-[50%] max-emd:w-full">
                   <label htmlFor="mobile" className="text-white/90">Phone Number</label>
                   <input type="text" name="mobileno" value={queryData.mobileno || ""} id="mobile" placeholder="+91 0123456789" className="outline-0 bg-white/15 backdrop-blur-md shadow-md p-4 rounded-[10px] contactformborder" maxLength={14} onChange={(element) => {
                     getInput(element.target);
                   }}/>
                 </div>
 
-                  <div className="flex flex-col gap-1 w-[50%]">
+                  <div className="flex flex-col gap-1 w-[50%] max-emd:w-full">
                   <label htmlFor="email" className="text-white/90">Email<span className="text-red-500">*</span></label>
                   <input type="text" name="email" id="email" value={queryData.email || ""} placeholder="kanekiken@gmail.com" className="outline-0 bg-white/15 backdrop-blur-md shadow-md p-4 rounded-[10px] contactformborder" maxLength={50} required onChange={(element) => {
                     getInput(element.target);

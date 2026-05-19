@@ -5,7 +5,7 @@ import HeroBtns from '../hero-center/heroBtns.jsx'
 
 const hero = () => {
   return (
-    <div className='pt-15'>
+    <div className='pt-15 flex flex-col max-emd:gap-10'>
         <CenterSection />
         <HeroBtns />
        

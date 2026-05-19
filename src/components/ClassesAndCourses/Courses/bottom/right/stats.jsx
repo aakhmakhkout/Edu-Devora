@@ -20,7 +20,7 @@ const Stats = () => {
     ]
 
   return (
-    <div className='bg-black/20 rounded-[10px] borders backdrop-blur-md shadow-m h-60 courseCards max-md:w-[40%]'>
+    <div className='bg-black/20 rounded-[10px] borders backdrop-blur-md shadow-m h-50 courseCards max-lg:w-[40%]'>
         <div className='w-full flex justify-around h-15 items-center border-b-2 border-b-[#4d2f976d] text-[white]'>
         <h1 className='bg-[#3a429c] px-7 py-2 rounded-[10px] text-[white] font-bold'>Stats</h1>
         <ChartBarIncreasing size={34} strokeWidth={1.8} />

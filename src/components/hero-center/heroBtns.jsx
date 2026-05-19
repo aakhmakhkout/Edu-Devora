@@ -2,7 +2,7 @@ import React from 'react'
 
 const heroBtns = () => {
   return (
-    <div className=' w-[40%] h-15 flex justify-center items-center'>
+    <div className=' w-[50%] max-md:w-full h-15 flex justify-center items-center'>
 
         <div className=' w-100 flex justify-evenly items-center h-full herobtns'>
 

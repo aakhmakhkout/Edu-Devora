@@ -16,7 +16,7 @@ const CoursesSection = () => {
   // console.log(CatagData)
   return (
     <div className='min-h-screen bg-[#0e162a] w-full flex flex-col items-center justify-center'>
-        <div className='w-[90%] h-full'>
+        <div className='w-[90%] h-full '>
             <CoursesTop />
             <div className='flex flex-col max-2xl:items-center'>
             <SaC state = {{CatagData, setCatagData}} indexesState = {{indexes, setIndexes}} searchState = {{search, setSearch}}/>

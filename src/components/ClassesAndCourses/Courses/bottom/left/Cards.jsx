@@ -5,15 +5,15 @@ const Cards = ({courseData, bmData}) => {
   const {bookmarkData, setbookmarkData} = bmData
  
   return (
-    <div className='bg-black/20 text-white p-10 rounded-[10px] borders backdrop-blur-md shadow-md max-md:h-100 overflow-y-scroll'>
-      <div className='grid grid-cols-4 gap-5 auto-rows-fr max-desktop:grid-cols-3 max-2xl:grid-cols-2 justify-items-center'>
+    <div className='bg-black/20 text-white p-10 rounded-[10px] borders backdrop-blur-md shadow-md max-lg:h-150 max-lg:overflow-y-scroll w-full'>
+      <div className='grid grid-cols-4 gap-5 auto-rows-fr max-desktop:grid-cols-3 max-2xl:grid-cols-2 justify-items-center w-full max-emd:grid-cols-1'>
         {courseData.map(({id, courseName, catag, img, description, lessons, hours})=> {
 
-            return <div key={id} className='w-80 max-xl:w-70 h-full max-xl:h-70 max-lg:w-55 max-lg:h-55 flex flex-col bg-[#33399033] p-5 gap-3 max-lg:p-3 justify-center max-lg:justify-start relative rounded-[10px] courseCards'>
+            return <div key={id} className='w-full max-md:w-full h-full flex flex-col bg-[#33399033] p-5 gap-3 justify-center  relative rounded-[10px] courseCards'>
 
-              <div className='flex justify-center h-[50%] items-center max-lg:h-0'>
-                <img src={img} alt="img" className='w-30 max-lg:hidden'/>
-                <div className='absolute lg:right-4 lg:top-4 text-[#f69d11] max-lg:bottom-1 max-lg:right-2'>
+              <div className='flex justify-center h-[50%] items-center '>
+                <img src={img} alt="img" className='w-30'/>
+                <div className='absolute right-4 top-4 text-[#f69d11]'>
                   <button className='cursor-pointer bookmarkBtn' onClick={()=> {
                     setbookmarkData((prev)=> {
                       return [...prev, {cId: id}]
@@ -21,10 +21,10 @@ const Cards = ({courseData, bmData}) => {
                   }}><Bookmark size={25} strokeWidth={2.5} /></button> 
                 </div>
                 </div>
-                <div className='flex flex-col justify-end h-[45%] max-lg:justify-start'>
+                <div className='flex flex-col justify-end h-[45%]'>
                   <div className='flex flex-col gap-1'>
                   <Link  to={`/${id}`} className='courseLink' target='_blank'>
-                    <h1 className='font-bold text-xl max-xl:text-base'>{courseName}</h1>
+                    <h1 className='font-bold text-lg max-xl:text-base'>{courseName}</h1>
                 </Link> 
                      <p className='text-[13px] text-white/70'>{description}</p>
                    </div>

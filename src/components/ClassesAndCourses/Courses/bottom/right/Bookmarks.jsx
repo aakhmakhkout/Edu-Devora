@@ -25,7 +25,7 @@ const removeBookmark = (idx)=> {
 
 
   return (
-    <div className='bg-black/20 text-white rounded-[10px] borders backdrop-blur-md shadow-m min-h-50 max-h-100 hover:scale-105 transition-all overflow-y-auto bmkDiv max-lg:w-[50%]'>
+    <div className='bg-black/20 text-white rounded-[10px] borders backdrop-blur-md shadow-m min-h-50 max-h-100 hover:scale-105 transition-all overflow-y-auto bmkDiv max-lg:w-[50%] max-emd:w-full'>
       <div className='w-full flex justify-center h-15 items-center border-b-2 border-b-[#4d2f976d]'>
         <h1 className='bg-[#f69d11] px-5 py-2 rounded-[10px] text-[#0e162a] font-bold'>Bookmarks</h1>
       </div>

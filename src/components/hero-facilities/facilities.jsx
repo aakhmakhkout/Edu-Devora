@@ -2,7 +2,7 @@ const Facilities = ({data}) => {
      
   return (
     <div className="flex flex-col justify-center items-center relative -top-25 z-10 "> 
-        <div className="w-full overflow-x-scroll max-lg:h-60 flex lg:h-85">
+        <div className="w-full max-lg:overflow-x-scroll max-lg:h-60 flex lg:h-85">
         <div className="grid grid-cols-4 min-w-max place-items-center w-full flex-wrap max-lg:gap-5 max-lg:px-5">
         
             {data.map((values)=> {

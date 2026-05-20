@@ -10,12 +10,12 @@ const CoursesSearch = ({searchData}) => {
         })
     }
   return (
-       <div className='w-[50%] max-xl:w-[65%] max-lg:w-[70%]'>
+       <div className='w-[70%] max-xl:w-[65%] max-lg:w-[70%] max-emd:w-full max-emd:mt-2'>
         <div className="bg-black/20 h-17 flex justify-center rounded-[10px] borders backdrop-blur-md shadow-md">
-            <form className="flex justify-around items-center w-full relative" onSubmit={(elem)=> {
+            <form className="flex justify-around items-center w-full relative max-sm:gap-3" onSubmit={(elem)=> {
                 elem.preventDefault();
             }}>
-                <div className=" absolute left-8 text-white/60 z-10 max-md:left-3">
+                <div className=" absolute left-8 text-white/60 z-10 max-md:left-3 max-sm:hidden">
                 <Search size={25} strokeWidth={1.5} />
                 </div>
             <input type="text"  placeholder='Search course by name (e.g BCA, BBA etc)' className="bg-[#081430] w-[75%] max-2xl:text-sm h-10 text-center outline-none rounded-[10px] border border-white/15 classesSearch text-white" maxLength={30} onChange={(elem)=> {

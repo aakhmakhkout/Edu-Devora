@@ -5,7 +5,7 @@ const Cards = ({courseData, bmData}) => {
   const {bookmarkData, setbookmarkData} = bmData
  
   return (
-    <div className='bg-black/20 text-white p-10 rounded-[10px] borders backdrop-blur-md shadow-md max-lg:h-150 max-lg:overflow-y-scroll w-full'>
+    <div className='bg-black/20 text-white p-10 max-sm:p-3 rounded-[10px] borders backdrop-blur-md shadow-md max-lg:h-150 max-lg:overflow-y-scroll w-full'>
       <div className='grid grid-cols-4 gap-5 auto-rows-fr max-desktop:grid-cols-3 max-2xl:grid-cols-2 justify-items-center w-full max-emd:grid-cols-1'>
         {courseData.map(({id, courseName, catag, img, description, lessons, hours})=> {
 
